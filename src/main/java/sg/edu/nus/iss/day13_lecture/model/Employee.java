@@ -29,7 +29,7 @@ public class Employee {
     @Size(max = 120)
     private String email;
 
-    @Pattern(regexp = "(\\8|9)[0-9]{7}", message = "Invalid phone number")
+    @Pattern(regexp = "(8|9)[0-9]{7}", message = "Invalid Phone Format")
     private String phoneNo;
 
     @Min(value = 1500, message = "Min salary starts from 1500")
